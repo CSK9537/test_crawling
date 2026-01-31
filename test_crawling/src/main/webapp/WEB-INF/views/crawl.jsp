@@ -12,7 +12,7 @@
 	<c:forEach items="${list}" var="result" varStatus="status">
 		<h2>${status.count}번 결과</h2>
 		<c:forEach items="${result}" var="guide">
-			<p>가이드 : ${guide}</p>
+			<p>- ${guide}</p>
 		</c:forEach>
 	</c:forEach>
 </body>

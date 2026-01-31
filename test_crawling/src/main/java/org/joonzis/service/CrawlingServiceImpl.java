@@ -52,11 +52,14 @@ public class CrawlingServiceImpl implements CrawlingService{
 				
 				for(WebElement ele : elements) {
 					WebElement a = ele.findElement(By.className("pc-title-wrap-content"));
-					String text = ele.getText().trim();
-					String text2 = a.getText().trim();
+					WebElement b = ele.findElement(By.className("care-content"));
+					String text = a.getText().trim();
+					String text2 = b.getText().trim();
 					if(!text.isEmpty()) {
 						result.add(text);
+						result.add(text2);
 						System.out.println("Crawl data: " + text);
+						System.out.println("Crawl data: " + text2);
 					}
 				}
 				
