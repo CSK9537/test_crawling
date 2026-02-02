@@ -12,6 +12,7 @@ public class CrawlingController {
 	@Autowired
 	private CrawlingService service;
 	
+	// 동적으로 식물이름을 받을 수 있게끔
 	@RequestMapping("/crawl")
 	public String crawl(Model model) {
 		model.addAttribute("list", service.doCrawl());
