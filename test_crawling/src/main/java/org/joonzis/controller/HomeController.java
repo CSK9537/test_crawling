@@ -10,5 +10,8 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
-	
+	@RequestMapping("/crawl")
+	public String crawl() {
+		return "crawl";
+	}
 }

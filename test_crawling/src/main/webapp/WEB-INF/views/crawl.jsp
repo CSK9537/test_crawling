@@ -9,11 +9,5 @@
 </head>
 <body>
 	<h1>crawl</h1>
-	<c:forEach items="${list}" var="result" varStatus="status">
-		<h2>${status.count}번 결과</h2>
-		<c:forEach items="${result}" var="guide">
-			<p>- ${guide}</p>
-		</c:forEach>
-	</c:forEach>
 </body>
 </html>
